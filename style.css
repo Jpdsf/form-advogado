@@ -1,0 +1,53 @@
+*{
+    font-family: 'Garamond';
+
+}
+
+body{
+    background-color: #e9f3f0;
+}
+
+.cabecalho{
+    width: 100%;
+    background-image: linear-gradient(#d5dddb, #f4f6f5 );
+}
+
+.cabecalho-config{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+.form{
+    width: 100%;
+  
+}
+
+.form-config{
+    width: 80%;
+    height: auto;
+    background-color: #b1212a;
+    margin: 0 auto;
+    border: 2px solid #b1212a;
+    border-radius: 7px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    
+}
+
+#logo{
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+
+.botao{
+    text-align: center;
+    margin-top: 40px;
+}
