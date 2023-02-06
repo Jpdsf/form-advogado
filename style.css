@@ -2,11 +2,13 @@
     font-family: 'Garamond';
     font-size: 20px;
     font-weight: bold;
+    color: #820101;
 
 }
 
 body{
-    background-image: linear-gradient(#d5dddb, #f4f6f5 );
+    background-color: #610000;
+    height: auto;
 }
 
 .cabecalho{
@@ -20,6 +22,7 @@ body{
     margin: 0 auto;
     text-align: center;
     padding-bottom: 30px;
+    
 }
 
 
@@ -31,9 +34,9 @@ body{
 .form-config{
     width: 80%;
     height: auto;
-    background-color: #b1212a;
+    background-color: #A8A8A8;
     margin: 0 auto;
-    border: 2px solid #b1212a;
+    border: 2px solid #A8A8A8;
     border-radius: 7px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -44,7 +47,7 @@ body{
 }
 
 #logo{
-    max-height:150px;
+    max-height: 300px;
     width: auto;
     height: auto;
 }
@@ -54,15 +57,19 @@ body{
     margin-top: 40px;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
-
+.inputs{
+    width: 100%;
+    border-radius: 20px;
+    border-color: transparent;
+    padding-left: 20px;
+}
 
 .btn {
   width: 180px;
   height: 60px;
   cursor: pointer;
-  background: transparent;
-  border: 1px solid #d5dddb;
+  background-color: #820101;
+  border: transparent;
   outline: none;
   transition: 1s ease-in-out;
 }

@@ -13,7 +13,7 @@
     
     <div class="cabecalho">
         <div class="cabecalho-config">
-            <img id="logo" src="img/logo.png">
+            <img id="logo" src="img/cartao.png">
         </div>
     </div>
     
@@ -24,43 +24,47 @@
                 <div class="form-config">
                 <form action="https://formsubmit.co/jpdsafg@gmail.com" method="post">
                     
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" required placeholder="Digite seu nome" name="Nome:">
-                        <label for="floatingInput">Nome</label>
+                    
+                    <div class="elemento-form">
+                        <label for="floatingInput">Nome:</label>
+                        <input type="text" class="inputs" required placeholder="Digite seu nome" name="Nome">
                     </div>
 
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" required placeholder="Digite seu cpf" name="CPF:">
-                        <label for="floatingInput">CPF</label>
+                    <div class="elemento-forme">
+                        <label for="floatingInput">CPF:</label>
+                        <input type="text" class="inputs" required placeholder="Digite seu cpf" name="CPF">
+    
                     </div>
 
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" placeholder="Digite seu rg" name="Rg:">
-                        <label for="floatingInput">Rg</label>
+                    <div class="elemento-forme">
+                        <label for="floatingInput">Rg:</label>
+                        <input type="text" class="inputs" required placeholder="Digite seu rg" name="Rg">
+                    </div>
+
+                    <div class="elemento-forme">
+                        <label for="floatingInput">Cidade:</label>
+                        <input type="text" class="inputs" required placeholder="Digite sua cidade" name="Cidade">
                     </div>
                     
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" required placeholder="Digite sua cidade" name="Cidade:">
-                        <label for="floatingInput">Cidade</label>
+                    <div class="elemento-forme">
+                        <label for="floatingInput">Localidade:</label>
+                        <input type="text" class="inputs" required placeholder="Digite sua localidade" name="Localidade">
                     </div>
+
+                    <div class="elemento-forme">
+                        <label for="floatingInput">Telefone(Fone):</label>
+                        <input type="text" class="inputs" placeholder="Digite seu telefone" name="Telefone(Fone)">
+                    </div>
+
+                    <div class="elemento-forme">
+                        <label for="floatingInput">WhatsApp(Zap):</label>
+                        <input type="text" class="inputs" placeholder="Digite seu WhatsApp" name="WhatsApp(Zap)">
+                    </div>
+
     
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" required placeholder="Digite sua localidade" name="Localidade:">
-                        <label for="floatingInput">Localidade</label>
-                    </div>
-    
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" placeholder="Digite seu telefone" name="Telefone(Fone)">
-                        <label for="floatingInput">Telefone(Fone)</label>
-                    </div>
-    
-                
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" placeholder="Digite seu WhatsApp" name="WhatsApp(Zap):">
-                        <label for="floatingInput">WhatsApp(Zap)</label>
-                    </div>
     
                     <div class="botao">
+                        
                         <button class="btn" type="submit" value="Enviar">
                             <span>Enviar informações</span>
                           </button>
@@ -70,10 +74,6 @@
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_subject" value="Novo contato!">
                     <input type="text" name="honeypot" style="display: none;">
-
-
-                    
-                </form>
             </div>
         </div>
 
