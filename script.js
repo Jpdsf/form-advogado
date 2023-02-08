@@ -1,3 +1,27 @@
+if ('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices) {
+  console.log("Let's get this party started")
+}
+navigator.mediaDevices.getUserMedia({
+  video: {
+    width: {
+      min: 1280,
+      ideal: 1920,
+      max: 2560,
+    },
+    height: {
+      min: 720,
+      ideal: 1080,
+      max: 1440
+    },
+    facingMode: {
+      exact: 'environment'
+    }
+  }
+})
+
+
+
+
 feather.replace();
 
 const controls = document.querySelector('.controls');
@@ -10,20 +34,7 @@ let streamStarted = false;
 
 const [play, pause, screenshot] = buttons;
 
-const constraints = {
-  video: {
-    width: {
-      min: 1280,
-      ideal: 1920,
-      max: 2560,
-    },
-    height: {
-      min: 720,
-      ideal: 1080,
-      max: 1440
-    },
-  }
-};
+
 
 const getCameraSelection = async () => {
   const devices = await navigator.mediaDevices.enumerateDevices();
@@ -83,13 +94,14 @@ const pauseStream = () => {
   play.classList.remove('d-none');
   pause.classList.add('d-none');
 };
-
+const p = document.querySelector('#teste');
 const doScreenshot = () => {
   canvas.width = video.videoWidth;
   canvas.height = video.videoHeight;
   canvas.getContext('2d').drawImage(video, 0, 0);
   screenshotImage.src = canvas.toDataURL('image/webp');
   screenshotImage.classList.remove('d-none');
+  p.innerHTML = canvas.toDataURL('imagem/webp');
 };
 
 pause.onclick = pauseStream;
