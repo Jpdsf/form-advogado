@@ -1,3 +1,5 @@
+
+
 function startVideoFromCamera(){
     navigator.mediaDevices.getUserMedia({
         video: {
@@ -31,5 +33,31 @@ document.querySelector('button').addEventListener('click', () =>{
     imgURLDisplay.innerHTML = `<strong>URL da imagem:</strong> ${imgURL}`;
 
 })
+
+
+const startButton = document.getElementById('start-video');
+
+    startButton.addEventListener('click', function() {
+      navigator.mediaDevices.getUserMedia({
+        video: {
+          width: {
+            max: 320
+          } ,
+          height: {
+            max: 240
+          } ,
+          facingMode: {
+            exact: 'environment'
+          }
+        }
+        })
+        .then(function(stream) {
+          video.srcObject = stream;
+          video.play();
+        })
+        .catch(function(error) {
+          console.error("Oops. Something is broken.", error);
+        });
+    });
 
 window.addEventListener('DOMContentLoaded', startVideoFromCamera)
