@@ -1,8 +1,12 @@
 function startVideoFromCamera(){
     navigator.mediaDevices.getUserMedia({
         video: {
-          width: 1280 ,
-          height: 720 ,
+          width: {
+            max: 320
+          } ,
+          height: {
+            max: 240
+          } ,
           facingMode: {
             exact: 'environment'
           }
