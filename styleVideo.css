@@ -8,19 +8,18 @@
 
 .caixa{
     width: 100%;
-    border: 2px solid black;
 }
 
 video{
-    border: 2px solid blue;
-    width: 200px;
-    height: 200px;
+    border: 1px solid black;
+    width:   304px;
+    height: 154px;
 }
 
 canvas{
-    border: 2px solid red;
-    width: 200px;
-    height: 200px;
+    border: 1px solid black;
+    width:  304px;
+    height:  154px;
 
 }
 
