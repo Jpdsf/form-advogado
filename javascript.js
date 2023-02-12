@@ -67,5 +67,6 @@ window.addEventListener('DOMContentLoaded', startVideoFromCamera)
 
 
 function refreshAndClose() {
+  window.opener.location.reload();
   window.close();
 }
