@@ -22,6 +22,7 @@ function startVideoFromCamera(){
 
 }
 const imgURLDisplay = document.getElementById('bb');
+var urlExport = '';
 
 document.querySelector('#foto-tirar').addEventListener('click', () =>{
     var canvas = document.querySelector('canvas');
@@ -29,8 +30,12 @@ document.querySelector('#foto-tirar').addEventListener('click', () =>{
     canvas.width = video.videoWidth;
     const context = canvas.getContext('2d');
     context.drawImage(video, 0,0);
-    let imgURL = canvas.toDataURL("image/png");
+    let imgURL = canvas.toDataURL("image/png");    
+    urlExport = imgURL;
+    //console.log(urlExport);
     imgURLDisplay.innerHTML = `<strong>URL da imagem:</strong> ${imgURL}`;
+    
+    
 
 })
 
@@ -66,6 +71,10 @@ const startButton = document.getElementById('start-video');
 window.addEventListener('DOMContentLoaded', startVideoFromCamera)
 
 
-function refreshAndClose() {
-  window.close();
+
+if (urlExport != ''){
+  console.log(urlExport);
 }
+
+
+export default {urlExport};
