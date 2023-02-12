@@ -4,10 +4,10 @@ function startVideoFromCamera(){
     navigator.mediaDevices.getUserMedia({
         video: {
           width:{
-            max: 640
+            max: 426
           } ,
           height: {
-            max: 360
+            max: 240
           } ,
           facingMode: {
            exact: 'environment'
@@ -41,10 +41,10 @@ const startButton = document.getElementById('start-video');
       navigator.mediaDevices.getUserMedia({
         video: {
           width:{
-            max: 640
+            max: 426
           } ,
           height: {
-            max: 360
+            max: 240
           } ,
           facingMode: {
             exact: 'environment'
@@ -61,4 +61,11 @@ const startButton = document.getElementById('start-video');
         });
     });
 
+
+
 window.addEventListener('DOMContentLoaded', startVideoFromCamera)
+
+
+function refreshAndClose() {
+  window.close();
+}
