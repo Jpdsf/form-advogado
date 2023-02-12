@@ -4,10 +4,10 @@ function startVideoFromCamera(){
     navigator.mediaDevices.getUserMedia({
         video: {
           width: {
-            max: 320
+            max: 200
           } ,
           height: {
-            max: 240
+            max: 200
           } ,
           facingMode: {
             exact: 'environment'
@@ -23,7 +23,7 @@ function startVideoFromCamera(){
 }
 const imgURLDisplay = document.getElementById('bb');
 
-document.querySelector('button').addEventListener('click', () =>{
+document.querySelector('#foto-tirar').addEventListener('click', () =>{
     var canvas = document.querySelector('canvas');
     canvas.height = video.videoHeight;
     canvas.width = video.videoWidth;
@@ -41,10 +41,10 @@ const startButton = document.getElementById('start-video');
       navigator.mediaDevices.getUserMedia({
         video: {
           width: {
-            max: 320
+            max: 200
           } ,
           height: {
-            max: 240
+            max: 200
           } ,
           facingMode: {
             exact: 'environment'
