@@ -39,6 +39,7 @@ canvas{
 
 .videos, .fotos{
     text-align: center;
+    width: auto;
 }
 
 .btn {
