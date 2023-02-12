@@ -53,6 +53,7 @@ const startButton = document.getElementById('start-video');
         })
         .then(function(stream) {
           video.srcObject = stream;
+          video.setAttribute("playsinline", true);
           video.play();
         })
         .catch(function(error) {
