@@ -3,12 +3,12 @@
 function startVideoFromCamera(){
     navigator.mediaDevices.getUserMedia({
         video: {
-          width: 
-            320
-           ,
-          height: 
-            240 
-          ,
+          width:{
+            max: 320
+          } ,
+          height: {
+            max: 240
+          } ,
           facingMode: {
            exact: 'environment'
           }
@@ -40,12 +40,12 @@ const startButton = document.getElementById('start-video');
     startButton.addEventListener('click', function() {
       navigator.mediaDevices.getUserMedia({
         video: {
-          width: 
-            320
-           ,
-          height: 
-            240
-           ,
+          width:{
+            max: 320
+          } ,
+          height: {
+            max: 240
+          } ,
           facingMode: {
             exact: 'environment'
           }
