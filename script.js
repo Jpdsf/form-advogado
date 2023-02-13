@@ -21,7 +21,6 @@ function startVideoFromCamera(){
       
 
 }
-const imgURLDisplay = document.getElementById('bb');
 
 const linkUrl = document.querySelector('#link-foto');
 
@@ -37,7 +36,6 @@ if(!buttonFoto){
     context.drawImage(video, 0,0);
     let imgURL = canvas.toDataURL("image/png");    
     linkUrl.innerHTML = imgURL;
-    imgURLDisplay.innerHTML = `<strong>URL da imagem:</strong> ${imgURL}`;
 
 })
 }
