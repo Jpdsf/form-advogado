@@ -95,3 +95,44 @@ body{
 #imagem-came{
     width: 60px;
 }
+
+.caixa{
+    width: 100%;
+}
+
+video{
+    border: 1px solid black;
+
+}
+
+canvas{
+    border: 1px solid black;
+
+
+}
+
+.caixa-config{
+    width: 80%;
+    height: auto;
+    background-color: #A8A8A8;
+    margin: 0 auto;
+    border: 2px solid #A8A8A8;
+    border-radius: 7px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.videos, .fotos{
+    text-align: center;
+    width: auto;
+}
+
+#link-foto{
+    background-color: transparent;
+    border: transparent;
+    color:  transparent;
+    font-size: 0.001px;
+}

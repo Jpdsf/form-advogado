@@ -17,5 +17,8 @@
     "url": "https://github.com/Jpdsf/form-advogado/issues"
   },
   "homepage": "https://github.com/Jpdsf/form-advogado#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
