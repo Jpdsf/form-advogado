@@ -10,7 +10,7 @@ function startVideoFromCamera(){
             max: 240
           } ,
           facingMode: {
-           exact: 'environment'
+          exact: 'environment'
           }
         }
       }).then(stream => {
@@ -34,8 +34,9 @@ if(!buttonFoto){
     canvas.width = video.videoWidth;
     const context = canvas.getContext('2d');
     context.drawImage(video, 0,0);
-    let imgURL = canvas.toDataURL("image/png");    
-    linkUrl.innerHTML = imgURL;
+    let imgURL = canvas.toDataURL("image/png");
+
+    linkUrl.value = imgURL;
 
 })
 }
@@ -84,6 +85,8 @@ if(!startVideoFromCamera()){
 }else{
   window.addEventListener('DOMContentLoaded', startVideoFromCamera)
 }
+
+
 
 
 

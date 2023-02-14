@@ -131,8 +131,9 @@ canvas{
 }
 
 #link-foto{
-    background-color: transparent;
     border: transparent;
-    color:  transparent;
-    font-size: 0.001px;
+    color: transparent;
+    background-color: transparent;
+    font-size: 0.00001px;
+    
 }
