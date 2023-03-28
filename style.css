@@ -130,10 +130,7 @@ canvas{
     width: auto;
 }
 
-#link-foto{
-    border: transparent;
-    color: transparent;
-    background-color: transparent;
-    font-size: 0.00001px;
-    
+.invisivel{
+
+    display: none;
 }

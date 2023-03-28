@@ -23,6 +23,7 @@ function startVideoFromCamera(){
 }
 
 const linkUrl = document.querySelector('#link-foto');
+const testeFoto = document.querySelector('teste-foto');
 
 const buttonFoto = document.querySelector('#foto-tirar');
 if(!buttonFoto){
@@ -35,8 +36,12 @@ if(!buttonFoto){
     const context = canvas.getContext('2d');
     context.drawImage(video, 0,0);
     let imgURL = canvas.toDataURL("image/png");
-
     linkUrl.value = imgURL;
+
+
+
+
+
 
 })
 }
@@ -57,6 +62,7 @@ if(!startButton){
         height: {
           max: 240
         } ,
+        
         facingMode: {
           exact: 'environment'
         }
