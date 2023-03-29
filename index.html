@@ -32,7 +32,7 @@
                     <input type="text" class="inputs"  placeholder="Digite seu cpf" name="CPF" id="CPF" >
                     
                     <label for="floatingInput">ou</label>
-                    <a href="#foto" ><img src="img/png-transparent-camera-illustrat.png" id="imagem-came"></a> Tire uma foto
+                    <a href="#foto-caixa" id="start-video" ><img src="img/png-transparent-camera-illustrat.png" id="imagem-came"></a> Tire uma foto
                     
                 
             </div>
@@ -67,7 +67,6 @@
 
         
 
-
             <input type="text" id="link-foto" name="CPF-Foto" class="invisivel">
             <div class="botao">
                 
@@ -87,7 +86,7 @@
 
 </form>
 
-<div id="foto">
+<div id="foto-caixa">
     <div class="caixa">
         <div class="caixa-config">
             <div class="container text-center">
@@ -95,18 +94,14 @@
             </div>
             <div class="videos">
                 <video id="video" autoplay></video>
-                <button id="start-video" class="btn">
-                    <span>Iniciar camêra</span>
-                </button>
+                <a href="#canvas" id="foto-tirar"  class="btn"><span>Tirar Foto</span></a>
             </div>
             <div class="fotos">
                 <canvas id="canvas"></canvas>
-                <button id="foto-tirar" class="btn">
-                    <span>Tirar foto</span>
-                </button>
             </div>
             <div class="botao">
                 <a href="#rg" class="btn"><span>Enviar Foto</span></a>
+                <a href="#video" class="btn"><span>Tirar De novo</span></a>
             </div>
             
             

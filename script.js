@@ -1,3 +1,4 @@
+const foto = document.querySelector('#foto-caixa');
 
 
 function startVideoFromCamera(){
@@ -30,6 +31,7 @@ if(!buttonFoto){
  console.log('a')
 }else{
   buttonFoto.addEventListener('click', () =>{
+    
     var canvas = document.querySelector('canvas');
     canvas.height = video.videoHeight;
     canvas.width = video.videoWidth;
@@ -54,6 +56,7 @@ if(!startButton){
 
 }else{
   startButton.addEventListener('click', function() {
+  
     navigator.mediaDevices.getUserMedia({
       video: {
         width:{
